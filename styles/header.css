@@ -1,0 +1,228 @@
+/* Reset and Box-Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+    --white: #ffffff;
+    --red: #ff0000;
+    --grey: #5d5d5d;
+    --light-blue: #4992ff;
+    --dark-blue: #0066ff;
+    --doctor-bg: #d8e3ed;
+}
+
+/* HTML and Body */
+html {
+    scroll-behavior: smooth;
+    font-size: 100%; /* 1rem = 16px */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem; /* 16px */
+}
+
+/* Headings */
+h2 {
+    font-size: 1.875rem; /* 30px */
+    color: var(--grey);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 0.5rem; /* 8px */
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0.3125rem grey; /* 5px */
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--light-blue);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-blue);
+}
+
+/* Header and Navigation */
+header .main-header {
+    max-width: 89rem; /* 1280px */
+    margin-left: 2.7rem; /* 2.5rem */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem; /* 16px */
+    padding: 0 1.25rem; /* 20px */
+    height: 6rem;
+}
+.vcimg {
+    width: 50px;  /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+}
+
+/* Mobile specific adjustments */
+@media screen and (max-width: 66.25rem) { /* 1060px */
+    header .main-header {
+        margin: 0; /* Ensure margin is 0 for smaller screens */
+    }
+}
+
+header .main-header .main-header-logo {
+    max-width: 15.625rem; /* 250px */
+    width: 100%;
+}
+
+.main-header .header-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* 16px */
+}
+
+.main-header .header-details img {
+    width: 1.875rem; /* 30px */
+    height: 1.875rem; /* 30px */
+}
+
+.header-details .header-detail-text p:first-child {
+    font-size: 1rem; /* 12px */
+    font-weight: 500;
+    color: #757575;
+}
+
+.header-details .header-detail-text p {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.header-flag-container {
+    display: flex;
+    align-items: center;
+    gap: 0.3125rem; /* 5px */
+}
+
+@media screen and (max-width: 66.25rem) { /* 1060px */
+    .main-header .header-details,
+    .main-header .doctor-image {
+        display: none;
+    }
+}
+
+/* Navigation Bar */
+.nav-bg-color {
+    background: linear-gradient(to right, rgba(3, 159, 246, 1), rgba(82, 190, 254, 1));
+}
+
+nav {
+    max-width: 89rem; /* 1300px */
+    height: 4rem;
+    margin: 0 0 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem; /* 20px */
+    padding: 0 1.25rem; /* 20px */
+}
+
+nav .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 2.9rem; /* 30px */
+}
+
+nav .navbar-links a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+nav .navbar-links a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.3125rem; /* 5px */
+}
+
+.nav-search-container {
+    position: relative;
+}
+
+.nav-search-container .search-icon {
+    position: absolute;
+    filter: invert();
+    width: 1.5rem; /* 20px */
+    height: 1.5rem; /* 20px */
+    top: 1.0625rem; /* 17px */
+    left: 1.825rem; /* 10px */
+}
+
+nav .nav-search {
+    padding: 1.6rem 3.5rem 1.25rem 4.5rem; /* 20px 10px 20px 50px */
+    color: var(--white);
+    outline: none;
+    border: none;
+    background-color: var(--dark-blue);
+}
+
+nav .nav-search::placeholder {
+    color: var(--white);
+}
+
+nav .menu-icon {
+    display: none;
+}
+
+nav .menu-icon img {
+    filter: invert();
+    width: 1.875rem; /* 30px */
+    height: 2.1875rem; /* 35px */
+}
+
+.nav-search::placeholder {
+    color: var(--white);
+    font-size: 1.2rem; /* Match placeholder text size with input text size */
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: var(--light-blue);
+}
+
+.mobile-menu .mobile-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; /* 20px */
+    padding: 1.25rem; /* 20px */
+}
+
+.mobile-menu .mobile-links a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.mobile-menu .mobile-links a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.3125rem; /* 5px */
+}
+
+@media screen and (max-width: 66.25rem) { /* 1060px */
+    nav .navbar-links {
+        display: none;
+    }
+
+    nav .menu-icon {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 66.25rem) { /* 1060px */
+    .mobile-menu {
+        display: none;
+        visibility: hidden;
+    }
+}

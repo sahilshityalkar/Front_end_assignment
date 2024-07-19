@@ -1,0 +1,70 @@
+/* Flag Selection Dropdown */
+.header-flag-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem; /* 10px */
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-arrow {
+    width: 0;
+    height: 0;
+    border-left: 0.375rem solid transparent; /* 6px */
+    border-right: 0.375rem solid transparent; /* 6px */
+    border-top: 0.5rem solid var(--dark-blue); /* 8px */
+    margin-left: 0.5rem; /* 8px */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    min-width: 3.125rem; /* 50px */
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    border-radius: 0.3125rem; /* 5px */
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 0.3125rem; /* 5px */
+    text-align: center;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.dropdown-content a img {
+    width: 100%;
+    border-radius: 0.3125rem; /* 5px */
+}
+
+.dropdown-content a:hover {
+    background-color: var(--light-gray);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn img {
+    opacity: 0.8;
+}

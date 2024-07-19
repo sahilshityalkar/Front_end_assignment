@@ -1,0 +1,467 @@
+/* Hero Section CSS */
+.hero-bg-image {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    z-index: -100;
+    filter: brightness(90%);
+}
+
+.hero-container {
+    max-width: 1300px;
+    margin: 0 3rem;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: var(--white);
+}
+
+.hero-container>div {
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    font-size: 18px;
+}
+
+.hero-container .hero-heading {
+    font-weight: 600;
+}
+
+.hero-container>div span {
+    font-weight: 600;
+    color: var(--red);
+}
+
+.hero-container>div h1 {
+    font-size: 2.5rem;
+}
+
+#hero-p2{
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.hero-container .hero-btn {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 540;
+    padding: 10px 40px;
+    border: none;
+    outline: none;
+    color: var(--white);
+    background-color: var(--light-blue);
+    transition: transform 0.3s;
+}
+
+.hero-container .hero-btn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: var(--dark-blue);
+}
+
+/* Navigation Section CSS */
+.section-navigation {
+    max-width: 1300px;
+    padding: 0rem;
+    margin: 0rem;
+    margin-left: 4.2rem;
+    margin-top: 0.4rem;
+}
+
+.section-navigation ul {
+    width: 100%;
+    margin: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-navigation ul a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--grey);
+    padding: 1rem 0;
+}
+
+@media screen and (max-width: 1060px) {
+    .section-navigation {
+        display: none;
+    }
+}
+
+.section-navigation a:hover {
+    border-bottom: 3px solid #4992FF;
+  }
+  
+  .section-navigation a.active {
+    border-bottom: 3px solid #4992FF;
+  }
+
+.section-container {
+    max-width: 1300px;
+    margin: 0;
+    padding: 0px;
+    margin-left: 4.5rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.info-heading{
+    font-size: 2.2rem;
+    color: black;
+}
+
+.info-discription{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(43, 42, 42);
+}
+
+
+.treatment-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding: 40px 0;
+    border-bottom: 2px dashed var(--light-blue);
+}
+
+.treatment-container>div {
+    flex: 1;
+}
+
+.treatment-container>div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.treatment-container h2 span {
+    color: var(--red);
+    border-radius: 50%;
+}
+
+.treatment-container p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(43, 42, 42);
+}
+
+.treatment-container .treatment-image img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 900px) {
+    .treatment-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .treatment-container .treatment-image img {
+        max-width: 100%;
+    }
+}
+
+.additional-sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.additional-sections>div {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.additional-sections .additional-details {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 50px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--grey);
+    border-bottom: 2px dashed var(--light-blue);
+}
+
+.additional-details h2 span {
+    color: var(--red);
+    border-radius: 50%;
+}
+
+.additional-details ul {
+    list-style: circle;
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+.additional-details ul li::marker {
+    font-size: 25px;
+    color: var(--light-blue);
+}
+
+@media screen and (max-width: 900px) {
+    .additional-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Sticky form CSS Here */
+
+.sticky-form {
+    max-width: 380px;
+    min-width: 300px;
+    width: 100%;
+    position: sticky;
+    top: 40px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow: 0px 0px 3px var(--grey);
+}
+
+.sticky-form h3 {
+    font-size: 25px;
+    font-style: italic;
+    color: var(--light-blue);
+}
+
+#form-input::placeholder{
+    font-size: 15px;
+}
+
+.sticky-form input,
+.sticky-form textarea {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(189, 189, 189);
+}
+
+.sticky-form textarea {
+    min-height: 100px;
+}
+
+.sticky-form .submit-btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    color: var(--white);
+    background-color: var(--light-blue);
+    transition: background-color 0.3s;
+}
+
+.sticky-form .submit-btn:hover {
+    cursor: pointer;
+    background-color: var(--dark-blue);
+}
+
+/* Disable spinners in Chrome */
+.sticky-form input[type="number"]::-webkit-inner-spin-button,
+.sticky-form input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Patient Stories section CSS */
+
+.patient-stories {
+    margin-top: 100px;
+    max-width: 800px;
+}
+
+.patient-stories h2 {
+    margin-bottom: 30px;
+}
+
+.owl-carousel .patient-story-container {
+    padding: 20px;
+    border: 1px solid rgb(168, 168, 168);
+}
+
+.patient-story-container .p-story-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.patient-story-container .p-story-content {
+    margin: 20px 0;
+}
+
+.patient-story-container .p-story-content img {
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.patient-story-container .p-profile-details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.patient-story-container .p-profile-details p {
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--grey);
+}
+
+
+/* Doctor Details Container CSS */
+
+.doctor-details {
+    padding: 70px 20px;
+    background-color: var(--doctor-bg);
+}
+
+.doctor-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.doctor-heading p {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    color: var(--red);
+}
+
+.doctor-heading h2 span {
+    color: var(--dark-blue);
+}
+
+/* Doctor Carousel CSS */
+
+.doctor-carousel {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.doc-info-container {
+    padding: 20px;
+    background-color: var(--white);
+}
+
+.doc-image {
+    width: auto;
+    height: 350px;
+    margin-bottom: 30px;
+    background-color: pink;
+}
+
+.doc-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.doc-info h4 {
+    font-style: italic;
+    color: var(--red);
+}
+
+.doc-info p {
+    font-weight: 600;
+    color: var(--grey);
+}
+
+.doc-info .doc-degree {
+    font-size: 13px;
+}
+
+/* Doctor Details Container CSS */
+
+.hospital-details {
+    padding: 70px 20px;
+}
+
+/* Hospital Card CSS */
+
+.h-info-container {
+    border-radius: 10px;
+    border: 2px dashed var(--red);
+}
+
+.h-info-container .h-image img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
+}
+
+.h-info-container .h-info {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.h-info-container .h-info h3 {
+    font-size: 22px;
+}
+
+.h-info-container .h-info p {
+    font-weight: 600;
+    font-size: 18px;
+    font-style: italic;
+    color: var(--red);
+    margin-bottom: 20px;
+}
+
+.hospital-sub-heading {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.hospital-sub-heading a {
+    color: var(--red);
+}
+
+/* Carousel Custom Dots Color CSS */
+
+.custom-dots {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-dots .owl-dot {
+    background: var(--grey) !important;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+
+.custom-dots .owl-dot.active {
+    background: var(--light-blue) !important;
+}
