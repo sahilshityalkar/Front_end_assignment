@@ -12,11 +12,16 @@
     <link rel="stylesheet" href="/styles/footer.css">
     <title>Aafiya Mediretreats</title>
 </head>
-<body>
+<body onload="stopPreloader()">
+
+    <div id="preloader-animation">
+        <img src="assets/icons/loading.svg" alt="">
+    </div>
+
     <header>
         <div class="main-header">
             <div>
-                <a href="">
+                <a href="index.html">
                     <img src="assets/images/MainLogo.webp" alt="Aafiya Mediretreats" height="80" width="250" class="main-header-logo">
                 </a>
             </div>
@@ -646,6 +651,13 @@
     <script src="/scripts/header.js"></script>
     <script src="/scripts/owl-carousel.js"></script>
     <script src="scripts/accordion.js"></script>
+    <script>
+        var Preloader = document.getElementById('preloader-animation');
+
+        function stopPreloader() {
+            Preloader.style.display = 'none';
+        }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
