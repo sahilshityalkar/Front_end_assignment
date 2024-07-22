@@ -6,7 +6,7 @@ document.getElementById('dataForm').addEventListener('submit', async (event) => 
     const phoneNumber = document.getElementById('phoneNumber').value;
     const treatmentRequirement = document.getElementById('treatmentRequirement').value;
 
-    const response = await fetch('http://localhost:3000/submit', {
+    const response = await fetch('https://backend-for-front-end-assignment-hermanos.vercel.app/api/submit', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
