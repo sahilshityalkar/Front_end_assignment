@@ -304,22 +304,21 @@
                     </div>
 
                 </div>
-
                 <!-- Sticky Form Begins Here -->
-                <form action="" class="sticky-form">
+                <form id="dataForm" class="sticky-form">
                     <h3>Need Help?</h3>
                     <p>Just let us know. We will be happy to assist you.</p>
                     <div>
-                        <input type="text" placeholder="Full Name" id="form-input" required>
+                        <input type="text" placeholder="Full Name" id="fullName" required>
                     </div>
                     <div>
-                        <input type="email" placeholder="Email" id="form-input" required>
+                        <input type="email" placeholder="Email" id="email" required>
                     </div>
                     <div>
-                        <input type="number" placeholder="Phone Number" id="form-input" required>
+                        <input type="number" placeholder="Phone Number" id="phoneNumber" required>
                     </div>
                     <div>
-                        <textarea rows="3" placeholder="Describe your Treatment Requirement" id="form-input" required></textarea>
+                        <textarea rows="3" placeholder="Describe your Treatment Requirement" id="treatmentRequirement" required></textarea>
                     </div>
                     <div>
                         <button type="submit" class="submit-btn">Send Enquiry</button>
@@ -649,8 +648,8 @@
             </div>
         </footer>
     <script src="/scripts/header.js"></script>
-    <script src="/scripts/owl-carousel.js"></script>
     <script src="scripts/accordion.js"></script>
+    <script src="formHandler.js"></script>
     <script>
         var Preloader = document.getElementById('preloader-animation');
 
